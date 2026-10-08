@@ -37,6 +37,11 @@ cat > "$APP/Contents/Info.plist" <<PLIST
 </plist>
 PLIST
 
+# Zip for sharing (the app plus the plain-text note), kept in build/.
+rm -rf "build/$NAME"; mkdir -p "build/$NAME"
+cp -R "$APP" "Read me first.txt" "build/$NAME/"
+ditto -c -k --sequesterRsrc --keepParent "build/$NAME" "build/$NAME.zip"
+
 # Install for this user only, replacing any running copy.
 mkdir -p "$HOME/Applications"
 pkill -x "$NAME" 2>/dev/null || true
@@ -44,3 +49,4 @@ rm -rf "$HOME/Applications/$NAME.app"
 cp -R "$APP" "$HOME/Applications/"
 open "$HOME/Applications/$NAME.app"
 echo "Installed and started: ~/Applications/$NAME.app"
+echo "Zip for sharing: build/$NAME.zip"

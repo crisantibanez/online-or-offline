@@ -1,0 +1,39 @@
+ONLINE OR OFFLINE
+A tiny menu bar app for the Mac that tells you whether your internet connection really works.
+
+WHAT YOU GET
+A dot at the top right of your screen, refreshed every 5 seconds:
+  green  = internet works, with the response time in milliseconds
+  yellow = it works but it is slow
+  red    = offline (no answer within 3 seconds, or a login page is in the way)
+Click the dot for details, a full speed test, and Quit.
+Made for trains, hotels and flaky Wi-Fi: one glance before you press enter on something.
+
+INSTALL (ONE TIME, ABOUT A MINUTE)
+1. Move "Online or Offline" into your Applications folder (or anywhere you like).
+2. Double-click it. Your Mac will say it "could not verify" the app and will not open it.
+   Click Done. Do NOT click "Move to Trash".
+3. Open System Settings, then Privacy & Security. Scroll down to the Security section.
+   You will see a line saying "Online or Offline" was blocked. Click "Open Anyway",
+   then confirm with your password or Touch ID.
+4. The app starts and a green dot appears in your menu bar. From now on it opens normally.
+   It never shows in the Dock while running: the dot is the sign it is on.
+   To quit it, click the dot and choose Quit.
+   To have it start when you log in, click the dot and choose "Launch at login".
+
+WHY THESE STEPS ARE NECESSARY
+Apple only lets an app open without questions when its maker has a paid Apple developer
+account and has sent each version to Apple to be checked and stamped ("notarised").
+This app is a free gift from a friend, not a product, so it is not notarised, and your Mac
+treats it as unverified until you say you trust it. That is all those steps do.
+There is nothing hidden in it: the whole app is a few hundred lines of code, published in
+the open at https://github.com/crisantibanez/online-or-offline where anyone can read it
+or build it themselves. It was entirely written by an AI (Claude) on Cristian's brief.
+
+WHAT IT DOES ON YOUR NETWORK
+Every 5 seconds it sends one tiny secure request to Cloudflare (1.1.1.1), the same kind of
+request a web page makes, and measures how long it takes. A few kilobytes each time,
+no account, no tracking, nothing stored.
+
+TO REMOVE IT
+Quit it from the dot, then drag "Online or Offline" to the bin. Nothing else is left behind.
