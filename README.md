@@ -3,6 +3,8 @@
 A tiny Mac menu bar app that tells you, in real time, whether your internet connection
 actually works. Made for trains: one glance before pressing enter on a prompt.
 
+<img src="screenshot.png" width="560" alt="The dot in the menu bar, its menu, and the three states: healthy, slow, offline">
+
 **Everything in this repository is 100% AI-written.** Cristian Santibanez briefed and
 decided; Claude (Anthropic) wrote the code, the build script, the icon and this text.
 It replaces a SwiftBar script that was itself AI-written and is kept in `reference/`.
