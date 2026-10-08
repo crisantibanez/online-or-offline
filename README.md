@@ -33,7 +33,7 @@ ping would still answer. Clicking the dot shows the details, a "Run full speed t
 
 Why the extra steps: Apple only opens an app without questions when its maker pays for a
 developer account and sends every version to Apple for checking ("notarisation"). This is a
-free gift, not a product, so it is not notarised and your Mac treats it as unverified until
+free, open utility, not a commercial product, so it is not notarised and your Mac treats it as unverified until
 you say you trust it. The whole app is a few hundred lines of code, all visible here.
 
 ## Build it yourself

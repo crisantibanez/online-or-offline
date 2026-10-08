@@ -24,7 +24,7 @@ INSTALL (ONE TIME, ABOUT A MINUTE)
 WHY THESE STEPS ARE NECESSARY
 Apple only lets an app open without questions when its maker has a paid Apple developer
 account and has sent each version to Apple to be checked and stamped ("notarised").
-This app is a free gift from a friend, not a product, so it is not notarised, and your Mac
+This is a free, open utility, not a commercial product, so it is not notarised, and your Mac
 treats it as unverified until you say you trust it. That is all those steps do.
 There is nothing hidden in it: the whole app is a few hundred lines of code, published in
 the open at https://github.com/crisantibanez/online-or-offline where anyone can read it
