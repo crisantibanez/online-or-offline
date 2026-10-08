@@ -7,7 +7,7 @@
 #
 # <bitbar.title>Connectivity</bitbar.title>
 # <bitbar.version>2.0</bitbar.version>
-# <bitbar.author>built for Cristian</bitbar.author>
+# <bitbar.author>AI-written</bitbar.author>
 # <bitbar.desc>Menu-bar dot showing healthy / slow / offline based on an HTTPS request to 1.1.1.1.</bitbar.desc>
 # <swiftbar.runInBash>true</swiftbar.runInBash>
 # <swiftbar.hideAbout>true</swiftbar.hideAbout>

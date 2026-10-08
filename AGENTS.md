@@ -1,5 +1,8 @@
 # Online or Offline
 
+Public on GitHub (crisantibanez/online-or-offline), MIT licence. Everything here is AI-written
+and `README.md` says so; keep that statement when editing it.
+
 A tiny native Mac menu bar app: one dot, refreshed every 5 seconds, that says whether the
 internet really works (a real HTTPS request to 1.1.1.1 by IP; a captive portal reads as offline).
 It replaces the SwiftBar script kept in `reference/`, which holds the proven logic and thresholds.
