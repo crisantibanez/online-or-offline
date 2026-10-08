@@ -20,10 +20,26 @@ login page) cannot fake Cloudflare's certificate and correctly reads as offline,
 ping would still answer. Clicking the dot shows the details, a "Run full speed test" item
 (Apple's `networkQuality` in Terminal), "Refresh now", a "Launch at login" toggle and Quit.
 
-## Install
+## Download (no developer tools needed)
 
-The app is not signed or notarised, so the easiest trustworthy path is to build it
-yourself. You need Apple's command-line developer tools (`xcode-select --install`).
+1. Download [Online-or-Offline.zip](https://github.com/crisantibanez/online-or-offline/releases/latest/download/Online-or-Offline.zip)
+   and open it. You get the app and a "Read me first" note.
+2. Move "Online or Offline" into your Applications folder and double-click it. Your Mac
+   will say it could not verify the app. Click Done, not "Move to Trash".
+3. Open System Settings, then Privacy & Security, scroll down to the Security section,
+   click "Open Anyway" next to the line about Online or Offline, and confirm.
+4. A green dot appears in your menu bar. From now on it opens normally. It never shows in
+   the Dock while running; click the dot to see details, to quit, or to start it at login.
+
+Why the extra steps: Apple only opens an app without questions when its maker pays for a
+developer account and sends every version to Apple for checking ("notarisation"). This is a
+free gift, not a product, so it is not notarised and your Mac treats it as unverified until
+you say you trust it. The whole app is a few hundred lines of code, all visible here.
+
+## Build it yourself
+
+The alternative for people with Apple's command-line developer tools
+(`xcode-select --install`): the Mac then trusts the app it built itself, with no warning.
 
 ```sh
 git clone https://github.com/crisantibanez/online-or-offline.git
@@ -31,9 +47,8 @@ cd online-or-offline
 ./build.sh
 ```
 
-That compiles the app, installs it in `~/Applications` for your user only, and starts it.
-Drag it into the Dock from there if you want to launch it by hand; it has no Dock icon
-while running, the dot in the menu bar is the running sign.
+That compiles the app, installs it in `~/Applications` for your user only, starts it, and
+also produces the zip above in `build/`.
 
 ## Why so small
 
